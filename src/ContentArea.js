@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import Search from './Search/Search';
+import SearchBox from './Search/SearchBox';
+import Results from './Search/Results';
 
 const StyledContainer = styled.div`
   width: 80vw;
@@ -22,11 +23,25 @@ const StyledContainer = styled.div`
   }
 `;
 
-const ContentArea = ({ name }) => (
-  <StyledContainer>
-    <Search />
-    <div>THIS WILL BE THE RESULTS</div>
-  </StyledContainer>
- );
+class ContentArea extends Component {
+  state = { query: '' }
+
+  handleQuery = input => {
+    setTimeout(() => {
+      this.setState({ query: input });
+
+    },
+      500);
+  }
+
+  render() {
+    return(
+      <StyledContainer>
+        <SearchBox onChange={this.handleQuery} />
+        <Results />
+      </StyledContainer>
+    );
+  }
+}
 
  export default ContentArea;

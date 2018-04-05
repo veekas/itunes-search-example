@@ -4,10 +4,10 @@ import styled from 'styled-components';
 const StyledContainer = styled.div`
 `;
 
-const Search = ({ name }) => (
+const Results = props => (
   <StyledContainer>
-    THIS WILL BE THE SEARCH BAR
+    THIS WILL BE THE RESULTS
   </StyledContainer>
 );
 
-export default Search;
+export default Results;

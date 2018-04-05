@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import ContentArea from './ContentArea';
@@ -19,14 +19,10 @@ const StyledApp = styled.div`
   }
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <StyledApp>
-        <ContentArea />
-      </StyledApp>
-    );
-  }
-}
+const App = () => (
+  <StyledApp>
+    <ContentArea />
+  </StyledApp>
+);
 
 export default App;
