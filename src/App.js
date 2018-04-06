@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ContentArea from './ContentArea';
+import ContentArea from './Search/ContentArea';
 
 const StyledApp = styled.div`
   height: 100vh;
