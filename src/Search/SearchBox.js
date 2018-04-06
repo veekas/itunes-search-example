@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 
 const StyledContainer = styled.div`
   grid-area: search;
-  background-color: #00688c;
+  // background-color: #6D47D9;
   display: flex;
   align-items: center;
   justify-content: center;

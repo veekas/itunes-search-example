@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { DebounceInput } from 'react-debounce-input';
 
 const placeHolderColor = 'lightgray'
 
-const StyledSearchBar = styled.input`
+const StyledSearchBar = styled(DebounceInput)`
   background: transparent;
   color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
   border: none;
   border-radius: 4px;
   font-size: 3rem;
@@ -47,6 +50,8 @@ class SearchBar extends Component {
     return (
       <StyledSearchBar
         type="text"
+        minLength={2}
+        debounceTimeout={500}
         onChange={this.handleChange}
         placeholder="Search for Artists"
       />
