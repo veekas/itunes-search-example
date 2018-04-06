@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
@@ -17,7 +17,7 @@ const NoResults = () => {
   return (
     <StyledContainer>
       <StyledNoResults>
-        🎵
+        <span role="img" aria-label="music note emoji">🎵</span>
       </StyledNoResults>
     </StyledContainer>
   );
