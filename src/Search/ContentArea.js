@@ -10,7 +10,7 @@ import NoResults from './NoResults';
 const StyledContainer = styled.div`
   width: 80vw;
   height: 80vh;
-  background: linear-gradient(to top, #F93D66, #6D47D9);
+  background: linear-gradient(to top, rgba(249, 61, 102, 0.7), rgba(109, 71, 217, 0.7));
   overflow: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
