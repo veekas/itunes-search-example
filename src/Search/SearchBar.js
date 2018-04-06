@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { DebounceInput } from 'react-debounce-input';
 
-const placeHolderColor = 'whitesmoke'
+const placeHolderColor = 'gainsboro'
 
 const StyledSearchBar = styled(DebounceInput)`
   background: transparent;
